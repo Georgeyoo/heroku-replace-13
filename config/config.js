@@ -5,7 +5,7 @@ require('dotenv').config();
 // create connection to our db
 const sequelize = process.env.MYSQL_URL
   ? new Sequelize(process.env.MYSQL_URL, {
-    ialect: 'mysql',
+    dialect: 'mysql',
     dialectOptions: {
         ssl: {
             rejectUnauthorized: true,        
